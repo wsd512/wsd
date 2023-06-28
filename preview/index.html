@@ -233,6 +233,16 @@ Java的运行：使用java命令。
 Java运行命令后面只能跟类名。
 Java运行的前提：class字节码文件已经生成了，否则无法运行。
 xxx.class，xxx是类名。
+</code></pre><h3 id="java_home-">JAVA_HOME环境变量</h3>
+<pre class="prettyprint linenums:0"><code>为什么需要配置JAVA_HOME环境变量呢？
+因为其他Java组件需要使用到JAVA_HOME环境变量，所以才需要配置，例如：Tomcat服务器或者其他软件。
+JAVA_HOME环境变量只需要配置到JDK的安装目录即可，
+注意：不是JDK的bin目录哦。
+然后在Path环境变量的最前面中配置：%JAVA_HOME%\bin; 即可，注意：英文分号不能省略哦。
+</code></pre><h3 id="classpath-">CLASSPATH环境变量</h3>
+<pre class="prettyprint linenums:0"><code>CLASSPATH环境变量是Java特有的。
+CLASSPATH的作用：指定类加载器去哪个目录下找字节码文件。
+目前不需要配置CLASSPATH环境变量了。
 </code></pre>
           	</article>
         </div>
