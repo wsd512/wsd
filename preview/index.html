@@ -217,7 +217,22 @@ Java字节码文件的扩展名是：xxx.class。
 也可以在DOS命令窗口中输入：java -version回车键，来查看JVM版本，如果出现版本信息则说明配置成功；
 也可以在DOS命令窗口中输入：javac -version回车键，来查看编译版本，如果出现版本信息则说明配置成功。
 </code></pre><h3 id="path-">Path环境变量的作用</h3>
-<pre class="prettyprint linenums:0"><code>
+<pre class="prettyprint linenums:0"><code>给Windows操作系统指路的，告诉Windows操作系统去哪里找这些命令文件。
+注意：
+修改完Path环境变量后，DOS命令窗口需要关闭然后重新打开。
+</code></pre><h3 id="windows-">Windows操作系统环境变量的分类</h3>
+<pre class="prettyprint linenums:0"><code>环境变量包括：“系统变量”和“用户变量”。
+系统变量：针对的是所有用户起作用。
+用户变量：针对的是当前登录系统的用户起作用。
+</code></pre><h3 id="java-">Java的编译与运行</h3>
+<pre class="prettyprint linenums:0"><code>Java的编译：使用javac命令。
+在DOS命令窗口中的语法格式：javac 空格 Java源文件的路径
+Java的运行：使用java命令。
+在DOS命令窗口中的语法格式：java 空格 类名
+注意：
+Java运行命令后面只能跟类名。
+Java运行的前提：class字节码文件已经生成了，否则无法运行。
+xxx.class，xxx是类名。
 </code></pre>
           	</article>
         </div>
